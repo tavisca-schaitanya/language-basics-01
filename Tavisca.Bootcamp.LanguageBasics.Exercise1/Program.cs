@@ -22,11 +22,10 @@ namespace Tavisca.Bootcamp.LanguageBasics.Exercise1
 
         public static int equateResults(string expectedResult, string actualResult)
         {
-            System.Console.WriteLine(expectedResult);
             if(expectedResult.Length != actualResult.Length)
                 return -1;
             int pos = actualResult.IndexOf('?');
-            return Convert.ToInt32(expectedResult[pos]);    
+            return expectedResult[pos] - '0';    
         }
 
         public static int FindDigit(string equation)
