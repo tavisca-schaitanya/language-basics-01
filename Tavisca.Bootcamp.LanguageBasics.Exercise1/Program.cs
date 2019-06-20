@@ -22,7 +22,7 @@ namespace Tavisca.Bootcamp.LanguageBasics.Exercise1
 
         public static int equateResults(string expectedResult, string actualResult)
         {
-            if(expectedResult.Length != actualResult.Length)
+            if(expectedResult.Length != actualResult.Length || expectedResult.Contains('.'))
                 return -1;
             int pos = actualResult.IndexOf('?');
             return expectedResult[pos] - '0';    
